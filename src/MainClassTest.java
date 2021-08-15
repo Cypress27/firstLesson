@@ -7,4 +7,10 @@ public class MainClassTest {
         MainClass localNumber = new MainClass();
         Assert.assertTrue("Local number != 14",localNumber.getLocalNumber() == 14);
     }
+
+    @Test
+    public void testGetClassNumber() {
+        MainClass classNumber = new MainClass();
+        Assert.assertTrue("Class number <= 45",classNumber.getClassNumber()>45);
+    }
 }
